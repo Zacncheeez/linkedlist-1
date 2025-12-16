@@ -6,7 +6,7 @@ using namespace std;
 void add(int newvalue);
 void print(Node* next);
 
-Node* head;
+Node* head = NULL;
 
 int main() {
   add(5);
