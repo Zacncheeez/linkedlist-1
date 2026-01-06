@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
   // Create students
-  Student* s1 = new Student("Zach", "Tobin", 12345, 3.8);
-  Student* s2 = new Student("Alex", "Smith", 67890, 3.5);
+  Student* s1 = new Student("Zach", "Tobin", 453682, 3.8);
+  Student* s2 = new Student("Dylan", "Waters", 454545, 3.5);
 
   // Create nodes
   Node* head = new Node(s1);
