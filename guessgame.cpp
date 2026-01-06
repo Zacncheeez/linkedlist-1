@@ -22,7 +22,7 @@ int main() {
   //cout << num1 << endl;
 
   
-  int guessCount = 1;
+  int guessCount = 0;
   
   srand(time(NULL));
   int answer = rand()% 100; 
