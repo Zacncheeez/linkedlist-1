@@ -1,5 +1,9 @@
 #include "Student.h"
 #include <cstring>
+#include <iostream>
+
+using namespace std;
+
 
 // Constructor
 Student::Student(const char* first, const char* last, int id, float gpa) {
@@ -14,4 +18,8 @@ void Student::print() const {
   cout << firstName << " " << lastName
        << " | ID: " << studentID
        << " | GPA: " << studentGPA << endl;
+}
+
+int Student::getID() const {
+    return studentID;
 }
