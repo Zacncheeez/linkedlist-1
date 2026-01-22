@@ -10,6 +10,8 @@ class Student {
   Student(const char* first, const char* last, int id, float gpa);
 
   void print() const;
+  
+  int getID() const;
 
  private:
   char firstName[50];
