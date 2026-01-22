@@ -1,26 +1,28 @@
+#include <iostream>
+#include <cstring>
 #include "Node.h"
+#include "Student.h"
 
-Node::Node(Student* newStudent) {
-  student = newStudent;
-  next = nullptr;
-}
+using namespace std;
 
-Node::~Node() {
-  delete student;
-  next = nullptr;
-}
-
-
-Node* Node::getNext() {
-  return next;
+Node::Node(Student* student) {
+  this->student = student;
+  next = NULL; 
 }
 
 Student* Node::getStudent() {
   return student;
 }
 
-
-void Node::setNext(Node* newnext) {
-  next = newnext;
+void Node::setNext(Node* next) {
+  this->next = next;
 }
 
+Node* Node::getNext() {
+  return next;
+}
+
+Node::~Node() {
+  delete student;
+  next = NULL;
+}
